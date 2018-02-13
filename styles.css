@@ -1,0 +1,57 @@
+html, body{
+    height:100%;
+}
+*{
+    margin:0;
+}
+section{
+    height:100%;
+    width:100%;
+    background-color: black;
+}
+#sectOne{
+    display:flex;
+}
+div#leftDv{
+    height:100%;
+    width:50%;
+    background-color: slateblue;
+}
+div#rightDv{
+    height:100%;
+    width:50%;
+    display: flex;
+    margin:0;
+    flex-direction: column;
+    justify-content: space-around;
+    /*align-content: center;*/
+    /*background-color: chartreuse;*/
+}
+.funDv{
+    height:50px;
+    width:50px;
+    background-color: slateblue;
+    margin:0 50%;
+
+}
+@media only screen and (max-width: 980px){
+    section#sectOne{
+        flex-direction: column;
+    }
+    div#leftDv{
+        height: 50%;
+        width:100%;
+    }
+    div#rightDv{
+        height: 50%;
+        width:100%;
+        display:flex;
+        flex-direction: row;
+    }
+    .funDv{
+        margin:25% auto;
+    }
+}
+section#sectTwo{
+
+}
